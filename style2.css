@@ -47,7 +47,7 @@
   display:block;
   padding: 0 1em;
   max-height: 0;
-  overflow: scroll;
+  overflow: hidden;
   background-color: var(--c00);
   transition: padding 250ms ease, max-height 125ms ease;
 }
