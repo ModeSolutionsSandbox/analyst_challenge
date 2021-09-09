@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Terry Brooks, Jr.</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="faq">
+  <h1>Resources</h1>
+  <div class="question-wrap">
+    <input type="checkbox" id="question1" checked>
+    <label for="question1">Query</label>
+    <div class="answer">
+     <p> To Save Time Feel Free To Use This Query - Ensure You Have Selected The <strong>Public Warehouse</strong></p><br>
+      <code>
+SELECT<br>
+r.location_id AS "Store Number",<br>
+r.address AS "Store Street Address",<br>
+r.city AS "Store City",<br>
+r.state AS "Store State",<br>
+r.zipcode AS "Store Zipcode",<br>
+r.longitude AS "Store Longitude",<br>
+r.latitude AS "Store Latitude",<br>
+r.has_drivethru AS "Store Has Drive-Thru",<br>
+r.is_24hrs AS "Store Operates 24 Hours",<br>
+r.open_date AS "Store Open Date",<br>
+r.manager_first_name AS "Store Manager's First Name",<br>
+r.manager_last_name AS "Store Manager's Last Name",<br>
+s.transaction_id AS "Transaction ID",<br>
+s.customer_id AS "Customer ID",<br>
+s.time_of_transaction AS "Time Order Started",<br>
+s.date_of_transaction AS "Order Date",<br>
+s.time_order_completed AS "Time Order Completed",<br>
+s.order_channel AS "Order Method",<br>
+s.handoff_method AS "Order Handoff Method",<br>
+s.delivery_provider AS "Delivery Provider",<br>
+s.sub_total AS "Order Subtotal",<br>
+s.tax AS "Order Tax",<br>
+s.number_of_items AS "Number of Items In Order",<br>
+s.catering_order AS "Is Catering Order"<br>
+FROM mode_onboarding.mcquery_sales s<br>
+JOIN mode_onboarding.mcquery_restaurants r
+ON s.store_number = r.location_id
+      </code>
+    </div>
+ <div class="question-wrap">
+    <input type="checkbox" id="question2">
+    <label for="question2">McQuery Schema</label>
+    <div class="answer"><p><p><a href="https://docs.google.com/spreadsheets/d/1Wwdfs989Lk8FZRFZgu1lQajry_aOHsF6UGaM9yoQUAQ/edit?usp=sharing">McQuery Schema</a></p>
+   </div>
+   <div class="question-wrap">
+    <input type="checkbox" id="question2">
+    <label for="question3">Tips & Hints</label>
+    <div class="answer"><p>Here Are Few Tips and Hints</p>
+      <ul>
+        <li><strong>Divide and Conquer:</strong><p>  If working in a team setting,while two users  working simultaneously in the same report does cause issues in terms of money users/work of writing another's, it may be helpful to divide work into other areas of the platform. Such as one  team member creates the custom pallet and another team member creates the query<p></li>
+        <li><a href="https://mode.com/help/articles/parameters/">All About Parameters</a></li>
+        <li><a href="https://mode.com/help/articles/definitions/">All About Definitions</a></li>
+        <li><a href="https://mode.com/help/articles/report-layout-and-presentation/#html-editor">UI Kits & HTML Editor</a></li>
+<!-- partial -->
+  
+</body>
+</html>
